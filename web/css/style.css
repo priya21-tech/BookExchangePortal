@@ -1,0 +1,166 @@
+/* ===== GLOBAL ===== */
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    margin: 0;
+    padding: 0;
+    color: #e2e8f0;
+}
+
+/* ===== GLASS CONTAINER ===== */
+
+ .container {
+    width: 80%;
+    max-width: 700px;   /* important for proper centering */
+    margin: 60px auto;  /* centers horizontally */
+    padding: 30px;
+
+    text-align: center; /* centers text */
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+
+/* ===== HEADINGS ===== */
+h1, h2 {
+    color: #f8fafc;
+    letter-spacing: 1px;
+}
+
+/* ===== BUTTONS ===== */
+button {
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 15px rgba(99,102,241,0.4);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #4f46e5, #4338ca);
+}
+
+/* ===== INPUT FIELDS ===== */
+input {
+    padding: 10px;
+    width: 250px;
+    margin: 8px 0;
+
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.2);
+
+    background: rgba(255,255,255,0.05);
+    color: white;
+}
+
+input::placeholder {
+    color: #cbd5f5;
+}
+
+/* ===== TABLE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+    background: rgba(255,255,255,0.03);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* TABLE HEADER */
+th {
+    background: rgba(99,102,241,0.2);
+    color: #e0e7ff;
+    padding: 12px;
+    text-align: left;
+}
+
+/* TABLE ROW */
+td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* HOVER EFFECT */
+tr:hover {
+    background: rgba(255,255,255,0.05);
+}
+
+/* ===== LINKS ===== */
+a {
+    text-decoration: none;
+}
+
+/* ===== SEARCH BOX ===== */
+input[type="text"] {
+    width: 300px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 300px;
+}
+
+button {
+    width: 200px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+/* ===== DASHBOARD LAYOUT ===== */
+.dashboard {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar h2 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    color: #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+/* MAIN AREA */
+.main {
+    margin-left: 240px;
+    padding: 40px;
+}
